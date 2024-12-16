@@ -1,12 +1,13 @@
 package com.enterprise.tracker.app.model.dto;
 
 import lombok.Getter;
+import lombok.Setter;
 import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
-
-public @Getter
-class ErrorResponse {
+@Getter
+@Setter
+public class ErrorResponse {
     // Getters for JSON serialization
     private HttpStatus status;
     private String message;
